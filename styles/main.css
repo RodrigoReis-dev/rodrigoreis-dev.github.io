@@ -16,7 +16,7 @@
 }
 
 html{
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
   height: 100vh;
   overflow: hidden;
   position: relative;
-}
+ }
 
 .img-wrapper {
   width: 100%;
@@ -50,6 +50,7 @@ header {
   }
 }
 
+/* Banner */
 .banner {
   position: absolute;
   top: 30%;
@@ -67,13 +68,13 @@ header {
   border-radius: 50%;
   text-align: center;
   opacity: 0;
-  border: 7px solid #fff;
-  box-shadow: .5rem .3rem 15px #000;
+  border: 5px solid rgb(223, 221, 220);
+  box-shadow: .5rem .3rem 15px rgb(51, 50, 50);
   }
 
 .banner h1 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: inherit;
   font-family: var(--font-primary);
   font-weight: 200;
@@ -86,16 +87,15 @@ header {
 
 .banner h2 {
   color:#ff7200; 
-  font-size: 5rem;
+  font-size: 4.7rem;
   font-family: var(--font-action);
   font-weight: 1400;
   text-shadow: 0.2rem 0.2rem 2px rgba(248, 243, 243, 0.4);
   line-height: 5rem;
-  margin-bottom: 2rem;
   opacity: 0;
   animation: moveBanner 1s 0.5s forwards;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .banner p {
@@ -120,6 +120,17 @@ header {
   opacity: 0;
 }
 
+@keyframes moveBanner {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+/* Button  */
 .btnn{
   width: 125px;
   height: 40px;
@@ -132,10 +143,10 @@ header {
   transition: 0.4s ease;
   text-align: center;
   margin: 7px;
+  letter-spacing: 1px;
 }
 .btnn:hover{
   background: #fff;
-  color: #000;
 }
 .btnn a{
   text-decoration: none;
@@ -143,12 +154,102 @@ header {
   font-weight: bold;
 }
 
-@keyframes moveBanner {
-  0% {
-    transform: translateY(10rem) rotateY(-30deg);
+.btnn:hover a{
+  color: #000;
+}
+
+
+/* Media Queries */
+@media (max-width:1200px) {
+  
+  .photo {
+    margin-top: -150px;
   }
-  100% {
-    transform: translateY(0) rotateY(0);
-    opacity: 1;
+  
+  .photo img {
+    width: 150px;
+    height: 150px;
+    } 
+  
+  .banner h1 {
+    font-size: 2.5rem;
+  }  
+  
+  .banner h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  
+  .banner p {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:800px) {
+  
+  .photo {
+    margin-top: -100px;
+  }
+  
+  .photo img {
+    width: 125px;
+    height: 125px;   
+ } 
+  
+  .banner h1 {
+    font-size: 2rem;
+  }  
+  
+  .banner h2 {
+    font-size: 3rem;
+    line-height: 3rem; 
+  }
+  
+  .banner p {
+    font-size: 2rem;
+    }
+  
+  .banner hr {
+    max-width: 630px;
+    
+  }
+    .btnn{
+    width: 100px;
+    height: 35px;
+   
+  }
+}
+
+@media (max-width:600px) {
+  
+  .photo {
+    margin-top: -160px;
+  }
+  
+  .photo img {
+    width: 125px;
+    height: 125px;   
+ } 
+  
+  .banner h1 {
+    font-size: 1.5rem;
+  }  
+  
+  .banner h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem; 
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+    }
+  
+  .banner hr {
+    max-width: 630px;  
+  }
+
+    .btnn{
+    width: 100px;
+    height: 35px;
   }
 }
