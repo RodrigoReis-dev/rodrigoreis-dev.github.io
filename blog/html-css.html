@@ -1,12 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html,Css</title>
+    <link rel="stylesheet" href="/styles/html-css.css">
 </head>
+
 <body>
+
+  <div class="container">
+
+    <header class="header">
+          
+          <nav class="navbar">
+              <div class="icon">
+                  <h2 class="logo">CSS {style}</h2>
+              </div>
+
+              <div class="menu">
+                  <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/blog/blog.html">myBlog</a></li>
+                      <li><a href="/blog/portfolio.html">Portfolio</a></li>
+                      <li><a href="/blog/contact.html">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+            
+    </header> 
+      
+    <main class="content">
+
+              <h1>CSS Margin vs. Padding: <br><span>Conceptos</span><br>What's the Difference?</h1>
+              <br>
+
+      <section class="apresentation">
+
+          <p class="par">If you’re new to CSS, you might have heard the words margin and padding but aren’t quite sure what they mean, or how to use them in your website designs. These concepts do similar things in CSS. However, they’re not quite the same, and there are important fundamental differences in their usage.
+            <br><br>
+            Once you fully understand the difference between margins and padding, you’ll be able to make better design decisions for your website. So let’s take a look at these two properties and what they do. We’ll include plenty of visual examples to illustrate how these important CSS components work.</p>
+
+            <p class="par">In CSS, a margin is the space around an element’s border, while padding is the space between an element’s border and the element’s content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element.
+              <br><br>
+            Let’s explore margins first. Consider the element illustrated below, which has a margin of 10 pixels:</p> 
+
+          <div><img alt="an illustration of the margins around a page element" src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=400&amp;name=Update%20css%20margin%20vs%20padding-1.png" style="margin-left: auto; margin-right: auto; display: block; width: 400px;" title="" width="400" srcset="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=200&amp;name=Update%20css%20margin%20vs%20padding-1.png 200w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=400&amp;name=Update%20css%20margin%20vs%20padding-1.png 400w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=600&amp;name=Update%20css%20margin%20vs%20padding-1.png 600w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=800&amp;name=Update%20css%20margin%20vs%20padding-1.png 800w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=1000&amp;name=Update%20css%20margin%20vs%20padding-1.png 1000w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png?width=1200&amp;name=Update%20css%20margin%20vs%20padding-1.png 1200w" sizes="(max-width: 400px) 100vw, 400px"></div>
+          
+                   
+          <p class="par">This means that there will be at least 10 pixels of space between this element and adjacent page elements — the margin “pushes away” its neighbors. If we put multiple of these elements together, we see how margins create whitespace between them, giving them room to breathe:</p> 
+            
+          
+          <div>
+            <img alt="an illustration of the margins around multiple page elements" src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=500&amp;name=Update%20css%20margin%20vs%20padding.png" style="margin-left: auto; width: 500px; margin-right: auto; display: block;" title="" width="500" srcset="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=250&amp;name=Update%20css%20margin%20vs%20padding.png 250w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=500&amp;name=Update%20css%20margin%20vs%20padding.png 500w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=750&amp;name=Update%20css%20margin%20vs%20padding.png 750w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=1000&amp;name=Update%20css%20margin%20vs%20padding.png 1000w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=1250&amp;name=Update%20css%20margin%20vs%20padding.png 1250w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding.png?width=1500&amp;name=Update%20css%20margin%20vs%20padding.png 1500w" sizes="(max-width: 500px) 100vw, 500px">
+          </div>
+       
+          <p class="par">On the other hand, padding is located inside the border of an element. The element below has padding of 10px on the left and right sides, and padding of 15px on the top and bottom sides:</p>
+
+          <div>
+            <img alt="an illustration of the padding inside a page element" src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=400&amp;name=Update%20css%20margin%20vs%20padding-4.png" style="margin-left: auto; width: 400px; margin-right: auto; display: block;" title="" width="400" srcset="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=200&amp;name=Update%20css%20margin%20vs%20padding-4.png 200w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=400&amp;name=Update%20css%20margin%20vs%20padding-4.png 400w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=600&amp;name=Update%20css%20margin%20vs%20padding-4.png 600w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=800&amp;name=Update%20css%20margin%20vs%20padding-4.png 800w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=1000&amp;name=Update%20css%20margin%20vs%20padding-4.png 1000w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=1200&amp;name=Update%20css%20margin%20vs%20padding-4.png 1200w" sizes="(max-width: 400px) 100vw, 400px">
+          </div>            
+        
+          <p class="par">To create the gap, the padding either grows the element’s size or shrinks the content inside. By default, the size of the element increases. If you want to create the gap by shrinking the content, set the box-sizing property to border-box (i.e. box-sizing: border-box).</p>
   
+                  <h1>When to use<br><span>Margin vs. Padding</span><br></h1>
+
+
+            <p class="par">In general, use margins when you’re adjusting the spacing of an element in relation to another element (i.e a div in relation to another div on the page), and padding when you’re adjusting the look of an individual element (i.e the amount of pixels between the edge of a div and the text within it).</p>
+
+            <p class="par">When you’re adjusting the layout of your design, you’ll need to determine whether to change the margins or the padding to achieve the desired visual effect. In this section, we’ll give some common uses for each property, starting with margins.</p>
+
+                  <h1>Uses for:<br><span>Margin</span></h1>
+             
+            <p class="par">CSS margins determine the space surrounding an element. Therefore, margins can be used to...</p>
+
+            <h1><strong>1. Change an Element’s Position on the Page
+            </strong></h1>
+
+            <p class="par">CSS margins can move an element up or down on the page, as well as left or right. If the width of your page is fixed, centering an element horizontally is simple: Just assign the value margin: auto.</p>
+
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="266" width="100%" name="cp_embed_1" scrolling="no" src="https://codepen.io/hubspot/embed/MWpWMpO?height=266&amp;theme-id=39533&amp;default-tab=result&amp;user=hubspot&amp;slug-hash=MWpWMpO&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20margin%3A%20auto&amp;name=cp_embed_1" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - margin: auto" loading="lazy" id="cp_embed_MWpWMpO"></iframe></div>
+
+            <h1><strong>2. Set the Distance Between Nearby Elements
+            </strong></h1>
+
+            <p class="par">Margins determine the amount of space between adjacent elements, or whitespace. Whitespace is important for making web pages visually palatable. For instance, use margins to add space between images or between an image and the text description below it:</p>
+
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="428" width="100%" name="cp_embed_2" scrolling="no" src="https://codepen.io/hubspot/embed/yLMLdbP?height=428&amp;theme-id=39533&amp;default-tab=result&amp;user=hubspot&amp;slug-hash=yLMLdbP&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Image%20Whitespace&amp;name=cp_embed_2" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Image Whitespace" loading="lazy" id="cp_embed_yLMLdbP"></iframe></div>
+
+            <h1><strong>3. Overlap Elements
+            </strong></h1>
+
+            <p class="par">On the flip side, a negative margin value lets you overlap page elements. This can come in handy when trying to achieve a <a href="https://blog.hubspot.com/website/broken-grid-layouts">broken grid effect</a>.</p>
+
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="410" width="100%" name="cp_embed_3" scrolling="no" src="https://codepen.io/hubspot/embed/poeoXPW?height=410&amp;theme-id=39533&amp;default-tab=result&amp;user=hubspot&amp;slug-hash=poeoXPW&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Broken%20Grid%20Effect&amp;name=cp_embed_3" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Broken Grid Effect" loading="lazy" id="cp_embed_poeoXPW"></iframe></div>
+
+            <h1>Uses for:<br><span>Padding</span></h1>
+
+            <p class="par">CSS padding determines how content looks within its respective element. You can change CSS padding to achieve the following effects:</p>
+
+            <h1><strong>1. Add Space Between Content and Its Border
+            </strong></h1>
+
+            <p class="par">This is the most common use of padding, and it’s useful for creating whitespace inside your elements.</p>
+
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="322" width="100%" name="cp_embed_4" scrolling="no" src="https://codepen.io/hubspot/embed/XWMWLRY?height=322&amp;theme-id=39533&amp;default-tab=result&amp;user=hubspot&amp;slug-hash=XWMWLRY&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Padding%20Sizes&amp;name=cp_embed_4" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Padding Sizes" loading="lazy" id="cp_embed_XWMWLRY"></iframe></div>
+
+            <h1><strong>2. Change the Size of an Element
+            </strong></h1>
+
+            <p class="par">When you increase the padding value, the content will stay the same size, but you will add more space around the content. This is useful for interactive elements, like buttons, when you want to expand the clickable area.</p>
+
+            <h1><span>The CSS Box Model</span></h1>
+
+            <p class="par">o see how margins and padding work together to set spacing around an element’s content, we can also use the CSS box model. The CSS box model is used for page design and layout. Essentially, every HTML element in a document is wrapped inside a layered box that consists of the margin, border, padding, and content:</p>
+
+            <p><img alt="an illustration of the css box model" src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=650&amp;name=Update%20css%20margin%20vs%20padding-2.png" style="margin-left: auto; margin-right: auto; display: block; width: 650px;" title="" width="650" srcset="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=325&amp;name=Update%20css%20margin%20vs%20padding-2.png 325w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=650&amp;name=Update%20css%20margin%20vs%20padding-2.png 650w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=975&amp;name=Update%20css%20margin%20vs%20padding-2.png 975w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=1300&amp;name=Update%20css%20margin%20vs%20padding-2.png 1300w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=1625&amp;name=Update%20css%20margin%20vs%20padding-2.png 1625w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=1950&amp;name=Update%20css%20margin%20vs%20padding-2.png 1950w" sizes="(max-width: 650px) 100vw, 650px"></p>
+
+            <p class="par">Applying height and width to your elements is easier once you understand the CSS box model. To ensure proper alignment, you’ll just need to do some simple math. However, if you’re confused about how the box model works, you could end up with a sloppy layout. To learn more about this concept, see our <a href="https://blog.hubspot.com/website/css-box-model">guide to the CSS box model</a>.</p>
+
+            <h1><span>CSS Margin vs. Padding vs. Border</span></h1>
+
+            <p class="par">The border is the layer of the CSS box model that sits between margin and padding. By default, the border does not have any width, but you can set one with the CSS border property.</p>
+
+            <p class="par">Margin and padding are always parts of an element, even if there’s no visible border. This image illustrates such a case:</p>
+
+            <p><img alt="an illustration of the padding and margins in an HTML page element" src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=650&amp;name=Update%20css%20margin%20vs%20padding-3.png" style="margin-left: auto; width: 650px; margin-right: auto; display: block;" title="" width="650" srcset="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=325&amp;name=Update%20css%20margin%20vs%20padding-3.png 325w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=650&amp;name=Update%20css%20margin%20vs%20padding-3.png 650w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=975&amp;name=Update%20css%20margin%20vs%20padding-3.png 975w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=1300&amp;name=Update%20css%20margin%20vs%20padding-3.png 1300w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=1625&amp;name=Update%20css%20margin%20vs%20padding-3.png 1625w, https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-3.png?width=1950&amp;name=Update%20css%20margin%20vs%20padding-3.png 1950w" sizes="(max-width: 650px) 100vw, 650px"></p>
+
+            <p class="par">This can be a bit confusing for beginners — the two blocks of content don’t have a visible border, but the margin and padding still apply.</p>
+
+            <h1><span>How to Add Margins in CSS</span></h1>
+
+            <p class="par">Every HTML element has four margins that you can toggle: top, right, bottom, and left.</p>
+
+            <p class="par">To set the same <strong>margin</strong> value on all four sides of an element, use the margin property. To set the <strong>margin for specific sides of an element, use the margin-top, margin-right, margin-bottom</strong>, and <strong>margin-left</strong> properties.</p>
+
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="608" width="100%" name="cp_embed_5" scrolling="no" src="https://codepen.io/hubspot/embed/qBrBzmg?height=608&amp;theme-id=39533&amp;default-tab=css%2Cresult&amp;user=hubspot&amp;slug-hash=qBrBzmg&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Setting%20Margins%201&amp;name=cp_embed_5" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Setting Margins 1" loading="lazy" id="cp_embed_qBrBzmg"></iframe></div>
+
+            <p class="par">You can also specify the margin property with two, three, or four values depending on the sides you want to apply margins to. If you want even margins on every side, you’ll only need to apply one value. Otherwise, the order of the values is important:</p>
+
+            <p class="par">>> Two values apply to the top and bottom, then right and left.
+              <br><br>
+              >> Three values apply to the top, then right and left, then bottom.
+              <br><br>
+              >> Four values apply to the top, then right, then bottom, then left.
+            </p> 
+
+              <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="597" width="100%" name="cp_embed_6" scrolling="no" src="https://codepen.io/hubspot/embed/mdWdZwy?height=597&amp;theme-id=39533&amp;default-tab=css%2Cresult&amp;user=hubspot&amp;slug-hash=mdWdZwy&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Setting%20Margins%202&amp;name=cp_embed_6" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Setting Margins 2" loading="lazy" id="cp_embed_mdWdZwy"></iframe></div>
+
+              <p class="par">Each value can be represented as a fixed length (often in px), a percentage (which defines the value as a percentage of the width of its container), or auto (which lets the browser set the margin).</p>
+
+              <h1><span>How to Add Pading in CSS</span></h1>
+
+              <p class="par">Like with margins, padding has four sides to be declared: top, right, bottom, and left.</p>
+
+              <p class="par">To set <strong>padding</strong> on all sides, use the shorthand property padding. To set padding for a specific side, use the <strong>padding-top, padding-right, padding-bottom</strong>, and <strong>padding-left</strong> properties.</p>
+
+              <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="514" width="100%" name="cp_embed_7" scrolling="no" src="https://codepen.io/hubspot/embed/KKWKjqv?height=514&amp;theme-id=39533&amp;default-tab=css%2Cresult&amp;user=hubspot&amp;slug-hash=KKWKjqv&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Setting%20Padding%201&amp;name=cp_embed_7" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Setting Padding 1" loading="lazy" id="cp_embed_KKWKjqv"></iframe></div>
+
+              <p class="par">When using the <strong>padding</strong> shorthand property, you may also define the padding using two, three, or four values. As with margins, one value will apply on all four sides. Otherwise, the order the values are written will determine which sides each applies to:</p>
+
+            <p class="par">>> Two values apply to the top and bottom, then right and left.
+              <br><br>
+              >> Three values apply to the top, then right and left, then bottom.
+              <br><br>
+              >> Four values apply to the top, then right, then bottom, then left.
+            </p> 
+
+            <div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="559" width="100%" name="cp_embed_8" scrolling="no" src="https://codepen.io/hubspot/embed/rNyNEwv?height=559&amp;theme-id=39533&amp;default-tab=css%2Cresult&amp;user=hubspot&amp;slug-hash=rNyNEwv&amp;editable=true&amp;pen-title=CSS%20Margin%20vs.%20Padding%20-%20Setting%20Padding%202&amp;name=cp_embed_8" style="width: 100%; overflow:hidden; display:block;" title="CSS Margin vs. Padding - Setting Padding 2" loading="lazy" id="cp_embed_rNyNEwv"></iframe></div>
+
+            <p class="par">Each value may be represented as a fixed length or a percentage (which defines it as a percentage of the width of the container).</p>
+
+            <h1><span>CSS Margins and Padding: Similar, 
+              <br> But Not the Same</span></h1>
+            
+            <p class="par">To space out elements in CSS, you’ll typically use the margin and padding properties. Understanding the difference is a step toward mastering CSS. You now also know how to set the margin and padding using the shorthand property, which is much quicker than defining each side independently.</p>
+
+            <p class="par">In web design and web development, HTML and CSS go hand-in-hand. HTML defines content structure and semantics, while CSS establishes styling and layout. If you’re a beginner, we recommend becoming fully acquainted with HTML before attempting CSS. Keep going back to HTML as you learn CSS until you fully understand HTML. Once you’ve applied CSS, HTML becomes much more interesting.</p>
+
+            <p class="par">Written by <a href="https://blog.hubspot.com/website/author/jamie-juviler">Jamie Juviler</a>.</p>
+
+      </section>
+      </main>
+    </div>
+   
+    <script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js" nonce=""></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
-</html>
+</html>>

@@ -1,72 +1,83 @@
+
+/* General Rules */
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
   background: rgb(17, 12, 12);
-
 }
 
+
+/* Container */
 .container {
+  width: 85%;
   max-width: 1200px;
+  height: 100vmax;
   background: linear-gradient(to top, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(/assets/blog.background.jpeg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  margin: auto;
   border-radius: 30px 30px;
- }
-
-.main{
-  position: relative;
-  display: flex;
- 
-}
-
-.navbar{
-  position:relative;
-  width: 1000px;
-  height: 75px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  }
+
+/* header */
+
+.header{
+  width: 100%;
+  max-width: 1200px;
+  height: 130px;
+  color:#ff7200;
+  background: #ff73001f;
+  display:flex;
+  align-items: center;
+  
 }
 
 .icon{
   width: 200px;
   float: left;
-  height: 70px;
 }
 
 .logo{
   color: #ff7200;
-  font-size: 55px;
+  font-size: 60px;
   font-family: Arial;
-  padding-left: 20px;
-  float: left;
-  padding-top: 10px;
-  margin-top: 5px
+  text-shadow: 2px 2px 10px black;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
 }
 
 .menu{
-  width: 800px;
-  float: left;
-  height: 100px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
 }
 
 ul{
-  float: left;
+  float: right;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 ul li{
   list-style: none;
-  margin-left: 95px;
-  margin-top: 45px;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-transform: uppercase;
-}
+  text-shadow: 3px 3px 5px black;
+  padding-right: 20px;
+  }
 
 ul li a{
   text-decoration: none;
@@ -74,71 +85,78 @@ ul li a{
   font-family: Arial;
   font-weight: bold;
   transition: 0.4s ease-in-out;
+  letter-spacing: 0.05rem;
+  
 }
 
 ul li a:hover{
   color: #ff7200;
 }
 
-.apresentation.rodrigo {
-  width: 900px;
-  display:block;
-  background: gray;
-}
 
-
+/* main content*/
 .content{
-  width: 1200px;
-  height: auto;
-  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
   color: #fff;
-  position: relative;
 }
 
+/* section hello */
 .content h1{
   font-family: 'Times New Roman';
   font-size: 35px;
   padding-left: 20px;
-  margin-top: 9%;
+  margin-top: 100px;
   letter-spacing: 1px;
 }
 
 .content span{
   color: #ff7200;
   font-size: 55px;
+  text-shadow: 2px 2px 10px black;
 }
-div .decription {
-  max-width: 600px;
+
+/* Section apresentation */
+.apresentation {
+  width: 100%;
+  max-width: 1200px;
   display: inline-flex;
-  padding: 30px;
+  align-items: center;
+  background: #ff73000b;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-p .par {
-  padding: 30px;
-}
-
-.content .par{
-  width: 600px;
-  padding-left: 20px;
-  padding-bottom: 25px;
-  font-family: Arial;
-  letter-spacing: 1.2px;
+.par{
+  max-width: 550px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
   line-height: 30px;
   font-size: 1.5rem;
-  display: inline;
-  padding: 30px;
-}
-
-
-
-section img {
-  width: 350px;
-  float: right;
-  padding: 0px 30px 10px 10px;
-}
-
-img {
+  display: inline-flex;
+  text-shadow: 2px 2px 5px black;
   
+}
+
+.picture {
+  width: 350px;
+}
+
+/* Blog Posts Sprints */
+.sprint{
+ background: #30302f54;
+ border-radius: 20px;
+ padding: 15px;
+}
+
+.sprint span {
+  font-size: 45px;
+}
+
+.sprint a {
+  color:#f7c28c;
+  font-size: 2rem;
 }
 
 
