@@ -2,37 +2,35 @@
 *{
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body {
-  background: rgb(17, 12, 12);
- 
+  /* background: rgb(17, 12, 12); */
+ background: linear-gradient(to top, rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.6) 50%), url(/assets/iPhone\ Wallpapers\ -\ Free\ HD\ Wallpapers\ -\ ZEDGE™.jpeg);
 }
 
 
 /* Container */
 .container {
-  width: 85%;
+  width: 100%;
   max-width: 1200px;
-  height: 100vmax;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.7) 50%), url(/assets/learn-plan.jpeg);
+  height: 100vh;
   background-position: center;
   background-size: cover;
   border-radius: 30px 30px;
   margin: auto;
   display: flex;
   flex-direction: column;
+  background-repeat: repeat-y;
   }
 
 /* header */
 
 .header{
   width: 100%;
-  max-width: 1200px;
   height: 135px;
   color:#ff7200;
-  background: #ffe6005c;
   display:flex;
   align-items: center;
 }
@@ -46,7 +44,7 @@ body {
   color: #ff7200;
   font-size: 50px;
   font-family: Arial;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: 3px 3px 5px rgb(117, 115, 115);
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
@@ -55,11 +53,12 @@ body {
 .navbar{
   width: 100%;
   height: 50px;
+  
 }
 
 .menu{
   width: 100%;
-  max-width: 1200px;
+
   position: relative;
   margin: auto;
 }
@@ -94,30 +93,25 @@ ul li a:hover{
 .content{
   width: 100%;
   max-width: 1200px;
-  height: 500px;
-  color: #fff;
-  
+  height: 300px;
+  color:#fff
 }
 
 /* section hello */
 .content h1{
   font-family: 'Times New Roman';
-  font-size: 40px;
+  font-size: 45px;
   padding-left: 20px;
   margin-top: 100px;
   letter-spacing: 1px;
   text-align: center;
-  text-shadow: 10px 10px 10px black;
-}
-
-.content h2 {
-margin-left: 20px;
+  text-shadow: 3px 3px 5px rgb(117, 115, 115);
 }
 
 .content span{
   color: #ff7200;
-  font-size: 55px;
-  text-shadow: 2px 2px 10px black;
+  font-size: 60px;
+  text-shadow: 3px 3px 5px rgb(117, 115, 115);
 }
 
 /* Section apresentation */
@@ -125,21 +119,22 @@ margin-left: 20px;
   width: 100%;
   max-width: 1200px;
   display: block;
-  background: #32251a25;
   flex-wrap: wrap;
-  margin-top: 260px;
+ 
 }
 
 p{
+  color: #fff;
   max-width: 1200px;
   font-family: Arial, sans-serif;
   letter-spacing: 1px;
-  line-height: 32px;
-  font-size: 1.6rem;
-  text-shadow: 3px 2px 5px black;
-  text-align: justify;
-  padding: 35px;
+  line-height: 35px;
+  font-size: 1.7rem;
+  text-shadow: 3px 3px 5px rgb(117, 115, 115);
+  text-align: left;
+  padding: 30px;
 }
+
 
 @media (max-width: 890px) {
 
@@ -151,6 +146,14 @@ p{
       margin-top: 150px;
     }
 
+    .content h1 {
+      margin-top: 50px;
+    }
+
+    span {
+      font-size: 50px;
+    }
+
     h2 {
       font-size: 1.1rem;
     }
@@ -158,4 +161,26 @@ p{
     p {
       line-height: 28px;
       font-size: 1.3rem;
+      padding: 20px;
     }
+  }
+
+  @media (max-width: 690px) {
+
+    .content span {
+      font-size: 40px;
+    }
+
+    .apresentation{
+      margin-top: 100px;
+    }
+
+    h2 {
+      font-size: 1.rem;
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 1.2rem;
+    }
+  }

@@ -8,7 +8,7 @@
 
 body {
   background: rgb(17, 12, 12);
-  margin-top: 62px;
+  
 }
 
 
@@ -16,7 +16,7 @@ body {
 .container {
   width: 85%;
   max-width: 1200px;
-  height: 90vmax;
+  height: 100vmax;
   background: linear-gradient(to top, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(/assets/contact.jpeg);
   background-position: center;
   background-size: cover;
