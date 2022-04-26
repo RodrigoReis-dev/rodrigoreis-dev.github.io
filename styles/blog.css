@@ -7,12 +7,12 @@
 }
 
 body {
-
+  width: 95%;
+  height: 100vh;
   background: linear-gradient(to top, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(/assets/blog.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-repeat: inherit;
-  height: 100vh;
+  background-repeat: repeat-y;
+  margin: auto;
 }
 
 
@@ -20,10 +20,9 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  border-radius: 30px 30px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
+  
 
   }
 
@@ -31,12 +30,13 @@ body {
 
 .header{
   width: 100%;
-  height: 130px;
+  height: 120px;
   color:#ff7200;
-  background: #3a352d6b;
+  background-color: #635f5c48;
+  text-shadow: 10px 10px 10px #292827;
   display:flex;
   align-items: center;
-  
+  position: relative;
 }
 
 .icon{
@@ -62,7 +62,6 @@ body {
 
 .menu{
   width: 100%;
-  
   position: relative;
   margin: auto;
 }
@@ -100,21 +99,24 @@ ul li a:hover{
   width: 100%;
   height: 500px;
   color: #fff;
+  position: relative;
+  margin-top: 100px;
 }
 
 /* section hello */
 .content h1{
   font-family: 'Times New Roman';
   font-size: 35px;
-  padding-left: 20px;
-  margin-top: 100px;
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
 .content span{
   color: #ff7200;
   font-size: 55px;
-  text-shadow: 1px 1px 4px rgb(84, 83, 83);
+  text-shadow: 4px 4px 5px rgb(84, 83, 83);
 }
 
 /* Section apresentation */
@@ -147,20 +149,21 @@ ul li a:hover{
 /* Blog Posts Sprints */
 .sprint{
  width: 100%;
- background: #514b415c;
- border-radius: 20px;
  padding: 15px;
- text-align: justify;
-}
+ text-align: center;
+ }
 
 .sprint span {
   font-size: 45px;
+  font-weight: 800;
+  text-shadow: 2px 2px 5px  #000;
 }
 
 .sprint a {
   color: #fff;
   font-size: 2rem;
   background-color: #635f5c48;
+  text-shadow: 10px 10px 10px #292827;
   border-radius: 40px;
   padding: 10px;
 }
@@ -169,6 +172,24 @@ ul li a:hover{
 .sprint a:hover{
   color: #ff7200;
 }
+
+
+
+.sprint-1, .sprint-2, .sprint-3, .sprint-4, .sprint-5{
+  background-color: #efece925;
+  display: inline-block;
+  width: 45%;
+  height: 30%;
+  min-width: 240px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+} 
+
+
+
+
+
 
 @media (max-width: 600px) {
 
@@ -191,8 +212,8 @@ ul li a:hover{
     
   }
 
-  .sprint h1 a {
-    font-size: .8rem;
+  .sprint a {
+    font-size: 1.3rem;
     text-align: left;
     padding-top: 10px;
   }
