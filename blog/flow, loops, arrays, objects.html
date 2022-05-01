@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow, Loops ...</title>
+    <link rel="stylesheet" href="/styles/flow, loops, arrays, objects.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+          
+          <nav class="navbar">
+              <div class="icon">
+                  <h2 class="logo">Flow, Loops, Arrays & Objects</h2>
+              </div>
+
+              <div class="menu">
+                  <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/blog/blog.html">myBlog</a></li>
+                      <li><a href="/blog/portfolio.html">Portfolio</a></li>
+                      <li><a href="/blog/contact.html">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+            
+    </header> 
+      <br><br><br>
+      <hr>
+    <main class="content">
+
+              <h1>Technical Blog <br><span>JS Fundamentals</span><br>Learning Competencies</h1>
+              <br>
+
+              <button class="btnn"><a href="/blog/javascript-dom.html">JavaScript-DOM</a></button>
+              <button class="btnn"><a href="/blog/functions.html">Functions</a></button>
+              <button class="btnn"><a href="/blog/DOM dev tools.html"> DOM/Dev Tools </a></button>
+
+      <section class="apresentation">
+
+          <h1><span>Control flow and Loops, Arrays and Objects</span>
+            </h1>
+
+            <h1><span>Control flow</span>
+            </h1>
+
+          <p class="par">The control flow is the order in which the computer executes statements in a script. Code is run in order from the first line in the file to the last line, unless the computer runs across the (extremely frequent) structures that change the control flow, such as conditionals and loops.
+            <br><br>
+
+          Control flow statements are those that make decisions about what happens in a program. A programmer needs to take care that the conditions used do not contradict one another. This would create regions in the code that would be unreachable.</p>
+
+          <div class="flow"><img class="alignnone wp-image-256379 lazyloaded" src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/control-staement-in-javascript-1.png.webp" alt="control staement in javascript 1" width="700" height="350" sizes="(max-width: 1200px) 100vw, 555px" text-align="center" srcset="https://cdn.educba.com/academy/wp-content/uploads/2019/12/control-staement-in-javascript-1.png.webp 635w,https://cdn.educba.com/academy/wp-content/uploads/2019/12/control-staement-in-javascript-1-300x158.png.webp 300w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-256379" src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/control-staement-in-javascript-1.png.webp" alt="control staement in javascript 1" width="555" height="292" srcset="https://cdn.educba.com/academy/wp-content/uploads/2019/12/control-staement-in-javascript-1.png.webp 635w,https://cdn.educba.com/academy/wp-content/uploads/2019/12/control-staement-in-javascript-1-300x158.png.webp 300w" sizes="(max-width: 555px) 100vw, 555px" /></noscript></div>
+            <br><br>
+
+          <div class="ei">
+            <ul>
+              <li>Conditional Statements: based on an expression passed, a conditional statement makes a decision, which results in either TRUE or FALSE.</li>
+
+              <li>Iterative Statements (Loop): Until and unless the expression or the condition given is satisfied, these statements repeat themselves.</li>
+            </ul>
+        </div>
+          <br><br><br>
+
+        <div class="flow-conditional"><code>if (condition)<br>
+            {<br>
+            // code to be executed of condition is true<br>
+            }<br>
+            else {<br>
+            // code to be executed of condition is false<br>
+            }</code>
+        </div>
+        <br><br>
+        <hr>
+
+          <h1><span>Loops</span>
+          
+        <p class="par">
+        Have you ever been punished in school and asked to write the sentence “I will not be late for the class again.” fifty times? It’s so boring, right? Well, JavaScript saves us from this trouble. When we ask JavaScript to execute the same task repeatedly, it’s a lot more efficient than us. How so? Simple, <strong>JavaScript</strong> uses loops! This tutorial is all about what JavaScript loops are and how we can use them. In this article, we will learn about different types of loops available in JavaScript. These include <strong>for, while and do…while loops</strong>. There are also some loops that are special in JavaScript, like for…in and for…of loops. Let’s learn about all the loops with their syntax and examples.
+        </p>
+
+  
+         <h1><span>What is a JavaScript Loop?</span></h1>
+
+        <p class="par">JavaScript Loop provides a quick and easy way to do repetitive tasks. They offer to perform iterations with only a few lines of code. Iteration is the number of times you want to repeat the task (that number can even be zero). Be sure you understand all of them, so you can implement the best loop statement for a given situation.
+          <br><br>
+        There are primarily two types of loops in any programming language, and JavaScript is no exception. These are:</p>
+          <br><br>
+
+          <div class="ei">
+            <ul>
+              <li>Entry Controlled Loops: Any loop where we check the test condition before entering the loop is an entry controlled loop. In these loops, the test condition determines whether the program will enter the loop or not. These include for, while, etc.</li>
+
+              <li>Exit Controlled Loops: Any loop where we check the test condition after the statements are executed once is an exit controlled loop. In these loops, the test condition determines whether or not the program will exit the loop. This category includes do…while loop.</li>
+            </ul>
+        </div>
+          <br><br><br>
+
+          <p class="par">We repeat the sequence of instructions until the test condition is true. JavaScript provides the following loop statements to achieve this:</p>
+
+          <div class="ei">
+            <ul>
+              <li>while statement</li>
+              <li>for statement</li>
+              <li>do..while statement</li>
+              <li>for…in statement</li>
+              <li>for…of statement</li>
+              <li>labeled statement</li>
+              <li>break statement</li>
+              <li>continue statement</li>
+            </ul>   
+        </div>
+      
+
+          <h2><span>while Statement</span></h2>
+
+          <div class="while">
+            <img src="/assets/while-Statement.jpeg" alt="while">
+          </div>
+        
+          <p class="par">A <strong>while</strong> statement in JavaScript executes until our boolean condition evaluates to <strong>true</strong>. This loop is an entry controlled loop.</p>
+            <br><br><br>
+
+          <h2><span>for Statement</span></h2>
+
+          <div class="while">
+            <img src="/assets/for-Statement.jpeg" alt="while">
+          </div>
+        
+          <p class="par">JavaScript <strong>for loops</strong> are similar to Java and C language for loops. It’s an entry controlled loop. It consists of three parts, separated with a semicolon:</p>
+          <br><br><br>
+
+          <div class="ei">
+            <ul>
+              <li><strong>Initialization:</strong> It initializes the loop with an iteration variable and executes once at the beginning of the loop.</li>
+              <li><strong>Condition:</strong> It specifies a certain condition in the loop that determines whether the loop body will execute or not. If the condition returns true, the code inside the for loop will execute. If it returns false, the control moves onto the statement after the loop.</li>
+              <li><strong>Increment/ Decrement:</strong> This section increments or decrements the value of our iteration variable by 1.</li>
+            </ul>   
+        </div>
+
+        <h2><span>do..while Statement</span></h2>
+
+        <div class="while">
+          <img src="/assets/do..while.jpeg" alt="while">
+        </div>
+      
+        <p class="par">This is an exit controlled loop; the loop body executes at least once, even if the condition is not true. This is because the condition is tested when the loop body ends. If the condition returns <strong>true</strong>, the code inside the loop executes again. If it returns <strong>false</strong>, the JavaScript interpreter exits the loop.</p>
+        <br><br><br>
+
+
+        <h2><span>for…in Statement</span></h2>
+
+        <div class="while">
+          <img src="/assets/for..in.jpeg" alt="while">
+        </div>
+      
+        <p class="par">This is a modified <strong>for loop</strong> that doesn’t require the programmer to know the number of iterations the loop needs to perform. It creates a loop iterating over all the enumerable properties of an object. The <strong>keys</strong> store the key of the current property and we access the property’s value with it. This means that the loop executes a specific set of statements for each distinct property in a JavaScript Object. The working of a <strong>for…in</strong> statement in JavaScript is similar to <strong>for-each</strong> loop in Java.</p>    
+      
+        <p class="par">The reason why the developers created the for…in loop is to work with user-defined properties in an object. It is better to use a traditional <strong>for loop</strong> over Array elements with numeric indexes.</p>
+
+        <h2><span>for…of Statement</span></h2>
+
+              
+        <p class="par">In the last JavaScript statement, we had to access the array’s values with the help of square brackets [ ]. We couldn’t access them directly and it makes your program more error-prone. So the JavaScript developers got us a new way to access these values directly. This makes our code a lot more efficient than before because the values store the property’s value, not the key.</p>
+        <br><br><br>
+        
+        <h2><span>Difference between for and while loop in JavaScript</span></h2>
+      
+        <div class="while">
+          <img src="/assets/Difference-between-for-and-while-loop.jpeg" alt="while">
+        </div>
+        <br><br><br><br>
+        <hr>
+        <br><br><br><br>
+
+        <h2><span>What are JavaScript Objects?</span></h2>
+
+        <p class="par">Objects are the basic building blocks for every object-oriented language. JavaScript being an object-oriented language, is no exception to this concept. With javascript being widely adopted due to its ability to provide dynamic behaviour to web pages, one should be aware of javascript and how to work with its objects. Objects in javascript are a group of different data types or objects put together as “key-value” pairs. The “key” part of the object is nothing but the object properties.
+        </p>
+
+        <h2><span>How to Create an Object in JavaScript?</span></h2>
+
+        <div class="w3-example" >
+          <h3>Example</h3>
+          <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+          <span class="jskeywordcolor" style="color:mediumblue">const</span> person = {<br><span class="jsnumbercolor" style="color:red">
+          </span>  &nbsp; firstName: <span class="jsstringcolor" style="color:brown">"John"</span>,<br><span class="jsnumbercolor" style="color:red">
+          </span>  &nbsp; lastName: <span class="jsstringcolor" style="color:brown">"Doe"</span>,<br><span class="jsnumbercolor" style="color:red">
+          </span>&nbsp;&nbsp;age: <span class="jsnumbercolor" style="color:red">50</span>,<br><span class="jsnumbercolor" style="color:red">
+          </span>&nbsp;&nbsp;eyeColor: <span class="jsstringcolor" style="color:brown">"blue"</span><br><span class="jsnumbercolor" style="color:red">
+          </span>};<span class="jsnumbercolor" style="color:red">
+          </span> </span></div>
+                    </div>
+          <br><br><br>
+
+          <h2><span>JavaScript Object Methods</span></h2>
+
+          <p class="par"><em><strong>create():</strong> As we have already seen above, this method is used to create javascript objects from a prototype object.</em></p>
+
+          <p class="par"><em><strong>is():</strong> This method takes in a second object as a parameter and determines if both the objects are equal and return a Boolean value. That is, if both objects are equal, then “true” is returned, else “false”.</em></p>
+
+          <p class="par"><em><strong>keys():</strong> The keys() method takes in the javascript object as a parameter and returns an array of its properties.</em></p>
+
+          <p class="par"><em><strong>values():</strong> Similarly, the values method takes in a javascript object as a parameter and returns an array of its values.</em></p>
+
+          <p class="par"><em><strong>entries():</strong> This method also takes in a javascript object as a parameter and returns an array containing another array of both key-value pairs. </em></p>
+
+          <hr>
+          <br>
+
+      
+        <h2><span>What is JavaScript Array?</span></h2>
+
+        <p class="par"><em>The definition of an array in Java goes something like this: “An array is a collection of homogeneous elements, stored in a contiguous memory location.”</em></p>
+
+        <p class="par">In the last JavaScript statement, we had to access the array’s values with the help of square brackets [ ]. We couldn’t access them directly and it makes your program more error-prone. So the JavaScript developers got us a new way to access these values directly. This makes our code a lot more efficient than before because the values store the property’s value, not the key.</p>
+
+        <h2><span>The array can be created in JavaScript, as given below
+        </span></h2>
+        <br><br><br>
+
+        <div class="par" style="background-color: rgb(182, 146, 2)";><code>var country = [ "India" , "England" , "Srilanka" ];</code></div>
+        <br>
+
+        <p class="par">In the above creation, you are initializing an array, and it has been created with values “India”, “England”, and “Srilanka”. The index of “India”, “England”, and “Srilanka” is 0, 1, and 2, respectively. </p>
+        <br><br><br>
+        
+        <hr>
+        <br>
+
+        <h2><span>The Difference Between Arrays and Objects</span></h2>
+
+        <p class="par">In JavaScript, <strong>Arrays</strong> use numbered indexes.  </p>
+        <p class="par">In JavaScript, <strong>Objects</strong> use named indexes.</p>
+        <br><br><br>
+
+        <h2><span>When to Use Arrays. When to use Objects.</span></h2>
+        
+        <p class="par">JavaScript does not support associative Arrays.</p>
+        <p class="par">You should use <strong>Objects</strong> when you want the element names to be strings (text).</p>
+        <p class="par">You should use <strong>Arrays</strong> when you want the element names to be numbers.</p>
+          
+       <br><br><br>
+      </section>
+      </main>
+    </div>
+   
+
+    <script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js" nonce=""></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>>

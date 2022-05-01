@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-DOM</title>
+    <link rel="stylesheet" href="/styles/javaScript-dom.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+          
+          <nav class="navbar">
+              <div class="icon">
+                  <h2 class="logo">JS, HTML & CSS</h2>
+              </div>
+
+              <div class="menu">
+                  <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/blog/blog.html">myBlog</a></li>
+                      <li><a href="/blog/portfolio.html">Portfolio</a></li>
+                      <li><a href="/blog/contact.html">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+            
+    </header> 
+      <br>
+      <hr>
+    <main class="content">
+
+              <h1>Technical Blog <br><span>JS Fundamentals</span><br>Learning Competencies</h1>
+              <br>
+
+              <button class="btnn"><a href="/blog/flow, loops, arrays, objects.html">Flow, Loops, Arrays, Objects</a></button>
+              <button class="btnn"><a href="/blog/functions.html">Functions</a></button>
+              <button class="btnn"><a href="/blog/DOM dev tools.html"> DOM & DevTools </a></button>
+
+      <section class="apresentation">
+
+          <h1><span>JavaScript, HTML and CSS</span><br>
+            Relationship Explained by Building A City</h1>           
+
+          <h1>If you have ever visited a walkable city, then you can understand the way that <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> work together.</h1>
+          <br>
+
+          <p class="par">For example, an “Intro to JavaScript” tutorial will usually focus on fundamentals like loops and 'if' statements, rather than using JavaScript alongside HTML.
+            <br><br>
+            After you get through these preliminary exercises, you reach the point where you need to set up your first full website. Even if this is a single-page, personal site that you never intend to release, you still face a series of new challenges like:</p>
+
+          <div class="ei">
+              <ul>
+                <li>How do I connect the three different types of files?</li>
+                <li>After I connect them, how will they work together?</li>
+                <li>How do I test all of this on my own computer?</li>
+              </ul>
+          </div>
+            
+         <h1></h1>
+          <p class="par">After thinking about this for awhile, I realized that these pieces work together in the same way that cities can still function, even when businesses are constantly moving in or going out of businesses, or real estate developers are remaking certain neighborhoods.
+          <br><br>
+          So, I am going to show how you can set up your first development environment with these three pieces. In order to understand this tutorial, you just need to know the basic parts of <strong>HTML, CSS and JavaScript</strong>. Even if you have not written any code in your life, you still will be able to understand how to link the three languages.</p>
+          <br><br>
+            
+          <h2><span>The Differences Between HTML, CSS and JavaScript</span></h2>
+
+          <p class="par">Let’s imagine that you are in charge of planning the layout of a new neighborhood in the city. This neighborhood will have some residential buildings, some eateries, a bank branch and a mall.</p>
+
+
+          <div class="city"><img data-attachment-id="643" data-permalink="https://blog.codeanalogies.com/2018/05/09/the-relationship-between-html-css-and-javascript-explained/cityblock-2/" data-orig-file="https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?fit=1489%2C671&amp;ssl=1" data-orig-size="1489,671" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cityBlock" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?fit=300%2C135&amp;ssl=1" data-large-file="https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?fit=730%2C329&amp;ssl=1" loading="lazy" class="size-large wp-image-643 aligncenter" src="https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?resize=730%2C329&amp;ssl=1" alt="" width="728" height="328" srcset="https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?resize=1024%2C461&amp;ssl=1 1024w, https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?resize=300%2C135&amp;ssl=1 300w, https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?resize=900%2C406&amp;ssl=1 900w, https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?resize=260%2C117&amp;ssl=1 260w, https://i0.wp.com/blog.codeanalogies.com/wp-content/uploads/2018/05/cityBlock.png?w=1489&amp;ssl=1 1489w" sizes="(max-width: 730px) 100vw, 730px"></div>
+          
+                   
+          <p class="par">This means that there will be at least 10 pixels of space between this element and adjacent page elements — the margin “pushes away” its neighbors. If we put multiple of these elements together, we see how margins create space between them, giving them room to breathe:</p> 
+
+          <div class="ei">
+            <ul>
+              <li>The structure of the building itself</li>
+              <li>The interior and exterior decoration of the building</li>
+              <li>The actual functions that visitors can perform in each building</li>
+            </ul>
+        </div>
+            
+        <p class="par">This corresponds to the three different types of files that you can use in your first website.</p> 
+
+        <p class="par">An <strong>HTML</strong> file contains the structure of the page itself. It is kind of like the structure of the building.
+
+        </p> 
+
+        <p class="par">A <strong>JavaScript</strong> file determines the dynamic and interactive elements on the page. It determines what happens when users click, hover or type within certain elements. This is kind of like the functionality of the building.</p> 
+
+        <p class="par">Let’s take the example of one of the houses. A house has 2 bedrooms, 2 bathrooms and 2 stories. That is the <strong>HTML</strong> of the building.
+
+        </p> 
+
+        <p class="par">It is made of brick and has a solid wood door. That corresponds to the <strong>CSS</strong> of the building.</p> 
+
+        <p class="par">What can you do within the house? You can eat… sleep… make meals… anything that you do at home, really! That is the JavaScript of the building.</p> 
+ 
+        <br><br><br>
+        <h2 class="par"><span>Use the slider on this interactive image to see how the parts work together.</span></h2>
+        <p class="par"><em>Mouse Interection</em></p>
+
+       <iframe src="https://blog.codeanalogies.com/wp-admin/admin-ajax.php?action=h5p_embed&id=1" width="726" height="478" frameborder="0" allowfullscreen="allowfullscreen" title="House to Page Structure- HTML, CSS, JS"></iframe><script src="https://blog.codeanalogies.com/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+      
+
+       <h2 class="par"><span>An Example of A Basic File Directory</span></h2>
+       <p class="par"><em>Mouse Interection</em></p>
+
+       <iframe src="https://blog.codeanalogies.com/wp-admin/admin-ajax.php?action=h5p_embed&id=2" width="726" height="718" frameborder="0" allowfullscreen="allowfullscreen" title="House File Structure- HTML, CSS, JS Basics"></iframe><script src="https://blog.codeanalogies.com/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+       
+      </section>
+      </main>
+    </div>
+    <!-- <script>H5PIntegration = window.parent.H5PIntegration; var H5P = H5P || {}; H5P.externalEmbed = false;</script> -->
+
+    <script src="https://blog.codeanalogies.com/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+    <script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js" nonce=""></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>>

@@ -1,0 +1,222 @@
+/* General Rules */
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #1b1a17;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 50%,rgba(0,0,0,0.85) 50%), url('/assets/Code\ on\ t-shirt.jpeg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Container */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  height: 100vh;
+  margin: auto;
+  display: block;
+  flex-direction: column;
+  text-align: left;
+  }
+
+/* header */
+
+.header{
+  width: 100%;
+  height: 130px;
+  display:flex;
+  align-items: center; 
+}  
+
+.icon{  
+  width: 550px;
+  float: left;
+}
+
+.logo{
+  color: #ffcc00;
+  font-size: 60px;
+  font-family: Arial;
+  text-shadow: 4px 4px 8px rgb(114, 111, 111);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
+}
+
+.menu{
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+ul{
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li{
+  list-style: none;
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgb(225, 192, 4);
+  padding-right: 25px;
+  text-align: center;
+  }
+
+ul li a{
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 0.05rem;
+}
+
+ul li a:hover{
+  color: #ffcc00;
+}
+
+
+/* main content*/
+.content{
+  width: 100%;
+  max-width: 1200px;
+  color: #fff;
+}
+
+/* section hello */
+.content h1{
+  font-family: 'Times New Roman';
+  font-size: 35px;
+  padding-left: 20px;
+  margin-top: 100px;
+  letter-spacing: 1px;
+}
+
+.content span{
+  color: #ffcc00;
+  font-size: 55px;
+  text-shadow: 2px 2px 5px rgb(166, 164, 164);
+}
+
+/* Section apresentation */
+.apresentation {
+  width: 95%;
+  max-width: 1200px;
+  display: block;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content img {
+  max-width: 95%;
+  padding: 20px;
+}
+
+.btnn{
+  width: 250px;
+  height: 55px;
+  background: #ff7200;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+  text-align: center;
+  margin: 7px;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+.btnn:hover{
+  background: #fff;
+}
+.btnn a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btnn:hover a{
+  color: #000;
+}
+
+p {
+  max-width: 1200px;
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+ .par{
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 1.5rem;
+  display: block;
+  text-shadow: 1px 1px 3px rgb(115, 113, 113);
+  text-align: justify;
+  justify-content: center;
+}
+
+.par a{
+  color: rgb(5, 191, 247);
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 0.05rem;
+}
+
+.par a:hover{
+  color: #ffcc00;
+}
+
+.apresentation .ei {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.apresentation .ei ul li {
+ list-style: circle;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.apresentation .ei ul li {
+  font-size: 30px;
+  text-shadow: 5px 5px 10px #a88701e6;
+  text-transform: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  .header {
+    height: 200px;
+  }
+
+  .logo {
+      font-size: 45px;
+    }
+
+  ul li {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+}
+
