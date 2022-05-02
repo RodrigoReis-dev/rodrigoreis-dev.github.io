@@ -193,12 +193,10 @@ p {
  list-style: circle;
   margin-left: 70px;
   margin-bottom: 30px;
-}
-
-.apresentation .ei ul li {
   font-size: 30px;
   text-shadow: 5px 5px 10px #a88701e6;
   text-transform: none;
+
 }
 
 .flow {
