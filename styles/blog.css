@@ -1,5 +1,5 @@
 
-/* General Rules */
+/* General Rules ------------------------------------*/
 *{
   margin: 0;
   padding: 0;
@@ -15,18 +15,15 @@ body {
   margin: auto;
 }
 
-
-/* Container */
+/* Container ----------------------------------------*/
 .container {
   width: 100%;
   height: 100vh;
   margin: auto;
   display: inline-block;
-  
-
   }
 
-/* header */
+/* header -------------------------------------------*/
 
 .header{
   width: 100%;
@@ -73,7 +70,7 @@ ul{
 
 ul li{
   list-style: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   text-shadow: 4px 4px 6px black;
   padding-right: 25px;
@@ -94,7 +91,7 @@ ul li a:hover{
 }
 
 
-/* main content*/
+/* main content ------------------------------------------*/
 .content{
   width: 100%;
   height: 500px;
@@ -103,7 +100,7 @@ ul li a:hover{
   margin-top: 100px;
 }
 
-/* section hello */
+/* section hello -----------------------------------------*/
 .content h1{
   font-family: 'Times New Roman';
   font-size: 35px;
@@ -119,7 +116,7 @@ ul li a:hover{
   text-shadow: 4px 4px 5px rgb(84, 83, 83);
 }
 
-/* Section apresentation */
+/* Section apresentation ----------------------------------*/
 .apresentation {
   width: 100%;
   display: inline-flex;
@@ -146,7 +143,7 @@ ul li a:hover{
   box-shadow: 2px 2px 15px #622d01;
 }
 
-/* Blog Posts Sprints */
+/* Blog Posts Sprints -------------------------------------*/
 .sprint{
  width: 100%;
  padding: 15px;
@@ -168,12 +165,10 @@ ul li a:hover{
   padding: 10px;
 }
 
-
 .sprint a:hover{
   color: #ff7200;
+  text-shadow: 3px 3px 7px  #000;
 }
-
-
 
 .sprint-1, .sprint-2, .sprint-3, .sprint-4, .sprint-5{
   background-color: #efece925;
@@ -186,11 +181,7 @@ ul li a:hover{
   margin: 10px;
 } 
 
-
-
-
-
-
+/* Media Queries -------------------------------------*/
 @media (max-width: 600px) {
 
   .header {

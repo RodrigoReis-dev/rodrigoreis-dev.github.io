@@ -1,0 +1,160 @@
+﻿/* // -- JAVASCRIPT CAFE CSS -- // */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.6) 50%), url(/assets/Morning\ Coffee.jpeg);
+  background-size: cover;
+	font-family: 'Fira Code', monospace;
+ 
+	text-align: center;
+  color: #fff;
+}
+
+/* header */
+
+.header{
+  background-color: rgba(38, 34, 34, 0.625);
+  height: 150px;
+  align-items: center;
+  text-shadow: 5px 5px 5px rgb(202, 90, 4);
+  display: flex;
+}
+
+.icon{
+  width: 600px;
+  float: left;
+}
+
+.logo{
+  color: #ff7200;
+  font-size: 50px;
+  font-family: Arial;
+  text-shadow: 3px 3px 5px rgb(117, 115, 115);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 20px;
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
+  
+}
+
+.menu{
+  width: 100%;
+
+  position: relative;
+  margin: auto;
+}
+
+ul{
+  float: right;
+  display: flex;
+}
+
+ul li{
+  list-style: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px black;
+  padding-right: 20px;
+  }
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 0.05rem; 
+}
+
+ul li a:hover{
+  color: #ff7200;
+}
+
+p {
+	font-size: 2.5vw;
+	font-weight: 400;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+  
+}
+
+h2 {
+  width: 100%;
+  font-size: 2.7vw;
+  color: rgb(32, 22, 10);
+  background-color: rgba(255, 255, 255, 0.444);
+  font-weight: 600;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.451);
+
+}
+
+
+#customerOrder {
+  color: rgb(250, 139, 3);
+  font-size: 2vw;
+  font-weight: 200;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+}
+
+#cash {
+  text-shadow: 4px 4px 10px rgb(202, 90, 4);
+  font-weight: bolder;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.07);
+  background-size: cover;
+	border: 3px solid rgb(110, 106, 106);
+	border-radius: 3px;
+	width: 95%;
+	height: auto;
+	padding: 0px 50px;
+  margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	backdrop-filter: blur(11.7px);
+	-webkit-backdrop-filter: blur(11.7px);
+}
+
+.button {
+	font-family: 'Fira Code', monospace;
+	font-size: 1.7vw;
+	font-weight: 500;
+	display: inline-block;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 30px;
+	color: white;
+	background: rgb(36, 28, 28);
+	padding: 12px 20px;
+	text-align: center;
+	transition-duration: .30s;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	margin: 20px 15px 15px 15px;
+}
+
+button:hover {
+	color: black;
+	background-color: rgba(255, 255, 255, 0.65);
+	backdrop-filter: blur(11.7px);
+	-webkit-backdrop-filter: blur(11.7px);
+}
