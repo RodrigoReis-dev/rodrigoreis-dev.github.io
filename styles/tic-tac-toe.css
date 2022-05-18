@@ -1,0 +1,182 @@
+
+@font-face {
+  font-family: 'Nothing To Lose';
+  src: url('/assets/Nothing\ To\ Lose.ttf') format('truetype');
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.912);
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+  border-radius: 20px;
+  align-content: center;
+}
+
+
+/* header --------------------------------------------- */
+.header {
+  background-color: rgba(247, 240, 240, 0.014);
+  height: 150px;
+  align-items: center;
+  display: flex;
+}
+
+.icon {
+  font-family: 'Courier New', Courier, monospace ;
+  width: 200px;
+  float: left;
+}
+
+.icon h2 {
+  color: #ff0000;
+  font-size: 130px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 3px 10px rgb(201, 196, 196);
+}
+
+/* Navbar ---------------------------------------------- */
+.navbar {
+  width: 100%;
+  height: 50px;
+}
+
+.menu {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+ul {
+  float: right;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px black;
+  padding-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 0.05rem;
+}
+
+ul li a:hover {
+  color: #ff0000;
+}
+
+/* Title --------------------------------------------------- */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  font-size: 80px;
+  color: #ff0000;
+  font-family: 'Nothing To Lose', cursive;
+  letter-spacing: 1.2px;
+  text-shadow: 4px 4px 6px white;
+}
+
+/* Restart Button ------------------------------------------- */
+button {
+  box-shadow: 4px 4px 20px white;
+}
+
+#restartButton {
+  width: 150px;
+  padding: 10px;
+  border-radius: 35px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: .5px;
+
+  margin-bottom: 30px;
+}
+
+#restartButton:hover {
+  background-color: rgba(251, 250, 250, 0.768);
+  color: #ff0000;
+  font-size: 25px;
+  transition: 1s;
+}
+
+/* Players ------------------------------------------------- */
+.players {
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.462);
+}
+
+/* Board ------------------------------------------------- */
+
+table {
+  color: #fff;
+  margin-right: center;
+  margin-left: center;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 450%;
+  color: rgb(105, 250, 1);
+}
+
+
+#leftTop {
+  border-right: 4px groove #fff;
+  border-bottom: 4px groove #fff;
+}
+
+#centerTop {
+  border-right: 4px groove #fff;
+  border-bottom: 4px groove #fff;
+}
+
+#rightTop {
+  border-bottom: 4px groove #fff;
+}
+
+#leftCenter {
+  border-right: 4px groove #fff;
+  border-bottom: 4px groove #fff;
+}
+
+#center {
+  border-right: 4px groove #fff;
+  border-bottom: 4px groove #fff;
+}
+
+#rightCenter {
+  border-bottom: 4px groove #fff;
+}
+
+#leftBottom {
+  border-right: 4px groove #fff;
+
+}
+
+#centerBottom {
+  border-right: 4px groove #fff;
+}

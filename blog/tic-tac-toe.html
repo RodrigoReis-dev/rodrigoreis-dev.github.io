@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/tic-tac-toe.css">
+    </head>
+
+    <body>
+
+      <header class="header">
+
+        <div class="icon">
+          <h2> # </h2>   
+        </div>
+
+        <nav class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/blog/blog.html">myBlog</a></li>
+                    <li><a href="/blog/portfolio.html">Portfolio</a></li>
+                    <li><a href="/blog/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+          
+  </header>
+       
+      <div class="container">
+
+        <h1>Tic Tac Toe</h1>        
+        <br>
+
+        <table class="board" id="board">
+
+          <tr class="row1" id="row1">
+              <td class="cell" id="leftTop"></td>
+              <td class="cell" id="centerTop"></td>
+              <td class="cell" id="rightTop"></td>
+          </tr>
+
+          <tr class="row2" id="row2">
+              <td class="cell" id="leftCenter"></td>
+              <td class="cell" id="Center"></td>
+              <td class="cell" id="RightCenter"></td>
+          </tr>
+
+          <tr class="row3" id="row3">
+              <td class="cell" id="leftBottom"></td>
+              <td class="cell" id="centerBottom"></td>
+              <td class="cell" id="rightBottom"></td>
+          </tr>
+      </table>
+
+      <div class="winning-message" id="winningMessage"></div>
+      <div id="winningMessageText"></div>
+
+      <br><br><br>
+      <div class="players"> Team Ghost : 👻  ( Vs ) Team Zombie : 🧟‍♀️ </div>
+     
+      <br><br><br>
+     
+      <button id="restartButton" onClick="window.location.href=window.location.href">Restart</button>
+      </div>
+        
+
+        <script src="/Tic-Tac-Toe.js"></script>
+    </body>
+</html>

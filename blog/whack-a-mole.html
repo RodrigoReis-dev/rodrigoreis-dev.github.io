@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+  <title>JAVASCRIPT CARNIVAL: Whack-a-Mole!</title>
+  <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/jsCarnival.css">
+</head>
+
+<body>
+
+  <header class="header">
+    
+    <div class="icon">
+      <h1>Whack-a-Mole</h1>
+    </div>
+    
+    <nav class="navbar">
+       
+        
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/blog/blog.html">myBlog</a></li>
+                <li><a href="/blog/portfolio.html">Portfolio</a></li>
+                <li><a href="/blog/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+      
+</header>
+
+  <h1> JAVASCRIPT CARNIVAL</h1>
+
+   <!-- Display Score and Time ---------------------------------->
+  <div class="displayScore">
+    <h2>Score:</h2>
+    <h2 id="score"><span>0</span></h2>
+    <br>
+    <h2>Time Left:</h2>
+    <h2 id="timeLeft"><span>60</span></h2>
+  </div>
+
+   <!-- Audio display ------------------------------------------>
+  <audio controls autoplay loop class="audio">
+    <source src="/assets/mole-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Board --------------------------------------------------->
+  <table class="board" id="board">
+    <tr>
+      <td class="hole" id="h0"> </td>
+      <td class="hole" id="h1"> </td>
+      <td class="hole" id="h2"> </td>
+      <td class="hole" id="h3"> </td>
+      <td class="hole" id="h4"> </td>
+    </tr>
+    <tr>
+      <td class="hole" id="h5"> </td>
+      <td class="hole" id="h6"> </td>
+      <td class="hole" id="h7"> </td>
+      <td class="hole" id="h8"> </td>
+      <td class="hole" id="h9"> </td>
+    </tr>
+    <tr>
+      <td class="hole" id="h10"> </td>
+      <td class="hole" id="h11"> </td>
+      <td class="hole" id="h12"> </td>
+      <td class="hole" id="h13"> </td>
+      <td class="hole" id="h14"> </td>
+    </tr>
+    <tr>
+      <td class="hole" id="h15"> </td>
+      <td class="hole" id="h16"> </td>
+      <td class="hole" id="h17"> </td>
+      <td class="hole" id="h18"> </td>
+      <td class="hole" id="h19"> </td>
+    </tr>
+    <tr>
+      <td class="hole" id="h20"> </td>
+      <td class="hole" id="h21"> </td>
+      <td class="hole" id="h22"> </td>
+      <td class="hole" id="h23"> </td>
+      <td class="hole" id="h24"> </td>
+    </tr>
+  </table>
+
+   <!-- Button restart game ---------------------------------->
+  <button id="restartButton" type="reset" onclick="window.location.href=window.location.href">restart</button>
+
+  <script src="/whack-a-mole.js"></script>
+</body>
+
+</html>
