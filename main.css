@@ -185,7 +185,7 @@ header {
   }
 }
 
-@media (max-width:800px) {
+@media (max-width:768px) {
   
   .photo {
     margin-top: -100px;
@@ -251,5 +251,40 @@ header {
     .btnn{
     width: 100px;
     height: 35px;
+  }
+}
+
+@media (max-width:320px) {
+  
+  .photo {
+    margin-top: -330px;
+  }
+  
+  .photo img {
+    width: 100px;
+    height: 100px;   
+ } 
+  
+  .banner h1 {
+    font-size: 1.1rem;
+  }  
+  
+  .banner h2 {
+    font-size: 2rem;
+    line-height: 2rem; 
+  }
+  
+  .banner p {
+    font-size: 1.1rem;
+    }
+  
+  .banner hr {
+    max-width: 260px;  
+  }
+
+    .btnn{
+    width: 75px;
+    height: 30px;
+    font-size: 13px;
   }
 }
